@@ -26,16 +26,15 @@ body {
     background: #97cff2;
     background: -webkit-linear-gradient(to right, #97cff2, #63b9a2);
     background: linear-gradient(to right, #97cff2, #63b9a2);
-    min-height: 100vh;
-    overflow-x: hidden;
 }
 
 .full-display {
-    max-height: 100vh;
+    height: 100vh;
     min-height: 100px;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    overflow-x: hidden;
 }
 
 /* Transition for the inital elements to fade in */
