@@ -1,51 +1,83 @@
-.navbar-vertical {
-  min-width: 16rem;
-  width: 16rem;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s;
-}
-
-#sidebar.active {
-  margin-left: -17rem;
-}
-
-#content.active {
-  width: 100%;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  #sidebar {
-    margin-left: -17rem;
-  }
-  #sidebar.active {
-    margin-left: 0;
-  }
-  #content {
-    width: 100%;
-    margin: 0;
-  }
-  #content.active {
-    margin-left: 17rem;
-    width: calc(100% - 17rem);
-  }
-}
-
-.page-content {
-  width: calc(100% - 16rem);
-  margin-left: 17rem;
-  transition: all 0.3s;
-}
-
 body {
-  background: #97cff2;
-  background: -webkit-linear-gradient(to right, #97cff2, #63b9a2);
-  background: linear-gradient(to right, #97cff2, #63b9a2);
-  min-height: 100vh;
-  overflow-x: hidden;
+    background: #97cff2;
+    background: -webkit-linear-gradient(to right, #97cff2, #63b9a2);
+    background: linear-gradient(to right, #97cff2, #63b9a2);
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
+.shadow {
+    box-shadow: 5px 10px 18px #888888;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+}
+
+#profile-picture {
+    width: 200px;
+    height: 200px;
+}
+
+/* Transition for the inital elements to fade in */
+.firstfade {
+    -webkit-animation: firstfade 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: firstfade 5s; /* Firefox < 16 */
+    -ms-animation: firstfade 5s; /* Internet Explorer */
+    -o-animation: firstfade 5s; /* Opera < 12.1 */
+    animation: firstfade 5s;
+}
+
+@keyframes firstfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes firstfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes firstfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes firstfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* End initial transition */
+
+/* Transition for the following elements to fade in */
+.secondfade {
+    -webkit-animation: secondfade 7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: secondfade 7s; /* Firefox < 16 */
+    -ms-animation: secondfade 7s; /* Internet Explorer */
+    -o-animation: secondfade 7s; /* Opera < 12.1 */
+    animation: secondfade 7s;
+}
+
+@keyframes secondfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes secondfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes secondfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes secondfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* End initial transition */
