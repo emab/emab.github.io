@@ -78,7 +78,7 @@ font-size: calc(16px + 1vw);
     overflow-x: hidden;
 }
 
-@media screen and (min-height: 600px) {
+@media screen and (orientation:landscape) and screen and (min-height: 600px) and (min-width: 600px) {
     .full-display {
         height: 100vh;
         min-height: 400px;
