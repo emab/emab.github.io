@@ -80,7 +80,7 @@ font-size: calc(16px + 1vw);
 
 @media screen and (min-height: 600px) {
     .full-display {
-        height: 100vf;
+        height: 100vh;
         min-height: 400px;
         -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
