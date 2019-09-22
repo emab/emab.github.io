@@ -7,19 +7,40 @@ body {
 }
 
 @keyframes bodyfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .shadow {
-    -webkit-box-shadow: 0px 0px 52px -11px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 52px -11px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 52px -11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 52px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 52px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 52px -11px rgba(0, 0, 0, 0.75);
+}
+
+.scroll-to-top {
+    display: none;
+}
+
+a#goup {
+    color: rgba(94, 160, 217, 0.54);
+}
+
+a:hover {
+    color: rgba(94, 160, 217, 1) !important;
 }
 
 .bottom {
-    position: absolute; 
+    position: absolute;
     bottom: 0;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 10px rgba(5, 5, 5, 0.35);
 }
 
 #first-welcome {
@@ -40,113 +61,204 @@ body {
     background: #97cff2;
     background: -webkit-linear-gradient(to right, #97cff2, #63b9a2);
     background: linear-gradient(to right, #97cff2, #63b9a2);
+    margin-top: 15px;
 }
 
 .full-display {
     height: 100vh;
     min-height: 100px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
     overflow-x: hidden;
+}
+
+.bottom-display {
+    min-height: 100px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    overflow-x: hidden;
+}
+
+.half-display {
+    width: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
 }
 
 /* Transition for the inital elements to fade in */
 .firstfade {
-    -webkit-animation: firstfade 5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: firstfade 5s; /* Firefox < 16 */
-    -ms-animation: firstfade 5s; /* Internet Explorer */
-    -o-animation: firstfade 5s; /* Opera < 12.1 */
+    -webkit-animation: firstfade 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: firstfade 5s;
+    /* Firefox < 16 */
+    -ms-animation: firstfade 5s;
+    /* Internet Explorer */
+    -o-animation: firstfade 5s;
+    /* Opera < 12.1 */
     animation: firstfade 5s;
 }
 
 @keyframes firstfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes firstfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes firstfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Internet Explorer */
 @-ms-keyframes firstfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 /* End initial transition */
 
 /* Transition for the second elements to fade in */
 .secondfade {
-    -webkit-animation: secondfade 7s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: secondfade 7s; /* Firefox < 16 */
-    -ms-animation: secondfade 7s; /* Internet Explorer */
-    -o-animation: secondfade 7s; /* Opera < 12.1 */
+    -webkit-animation: secondfade 7s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: secondfade 7s;
+    /* Firefox < 16 */
+    -ms-animation: secondfade 7s;
+    /* Internet Explorer */
+    -o-animation: secondfade 7s;
+    /* Opera < 12.1 */
     animation: secondfade 7s;
 }
 
 @keyframes secondfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes secondfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes secondfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Internet Explorer */
 @-ms-keyframes secondfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 /* End second transition */
 
 /* Transition for the third elements to fade in */
 .thirdfade {
-    -webkit-animation: thirdfade 10s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: thirdfade 10s; /* Firefox < 16 */
-    -ms-animation: thirdfade 10s; /* Internet Explorer */
-    -o-animation: thirdfade 10s; /* Opera < 12.1 */
+    -webkit-animation: thirdfade 10s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: thirdfade 10s;
+    /* Firefox < 16 */
+    -ms-animation: thirdfade 10s;
+    /* Internet Explorer */
+    -o-animation: thirdfade 10s;
+    /* Opera < 12.1 */
     animation: thirdfade 10s;
 }
 
 @keyframes thirdfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes thirdfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes thirdfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Internet Explorer */
 @-ms-keyframes thirdfade {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-/* End second transition */
+    from {
+        opacity: 0;
+    }
 
+    to {
+        opacity: 1;
+    }
+}
+
+/* End third transition */
