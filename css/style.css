@@ -45,7 +45,7 @@ a:hover {
 
 #first-welcome {
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 8vw;
 }
 
 #second-welcome {
@@ -262,3 +262,7 @@ a:hover {
 }
 
 /* End third transition */
+
+#intro {
+    
+}
