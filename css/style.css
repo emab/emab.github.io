@@ -45,16 +45,16 @@ a:hover {
 
 #first-welcome {
     text-transform: uppercase;
-    font-size: 8vw;
+    font-size: 10vw;
 }
 
 #second-welcome {
-    font-size: 2em;
+    font-size: 6vw;
 }
 
 #profile-picture {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 #welcome {
