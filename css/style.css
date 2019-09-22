@@ -2,10 +2,24 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+.bodyfade {
+    animation: bodyfade 1s;
+}
+
+@keyframes bodyfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 .shadow {
     -webkit-box-shadow: 0px 0px 52px -11px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 52px -11px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 52px -11px rgba(0,0,0,0.75);
+}
+
+.bottom {
+    position: absolute; 
+    bottom: 0;
 }
 
 #first-welcome {
@@ -70,7 +84,7 @@ body {
 }
 /* End initial transition */
 
-/* Transition for the following elements to fade in */
+/* Transition for the second elements to fade in */
 .secondfade {
     -webkit-animation: secondfade 7s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: secondfade 7s; /* Firefox < 16 */
@@ -101,5 +115,38 @@ body {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-/* End initial transition */
+/* End second transition */
+
+/* Transition for the third elements to fade in */
+.thirdfade {
+    -webkit-animation: thirdfade 10s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: thirdfade 10s; /* Firefox < 16 */
+    -ms-animation: thirdfade 10s; /* Internet Explorer */
+    -o-animation: thirdfade 10s; /* Opera < 12.1 */
+    animation: thirdfade 10s;
+}
+
+@keyframes thirdfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes thirdfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes thirdfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes thirdfade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* End second transition */
 
