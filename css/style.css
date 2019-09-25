@@ -66,8 +66,8 @@ font-size: calc(16px + 1vw);
 
 #welcome {
     background: #97cff2;
-    background: -webkit-linear-gradient(-45deg, #3ca5e7, #e0e73c, #23a6d5, #23d5ab);
-	background: linear-gradient(-45deg, #3ca5e7, #e0e73c, #23a6d5, #c2de29);
+    background: -webkit-linear-gradient(-45deg, #fff, #e0e73c, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #fff, #e0e73c, #23a6d5, #c2de29);
     margin-top: 15px;
     background-size: 400% 400%;
     animation: gradientBG 15s linear infinite;
